@@ -1,0 +1,16 @@
+[
+{
+  "modid": "moredeco",
+  "name": "More Deco",
+  "description": "Ajoute plus de décoration dans minecraft : tables ...",
+  "version": "0.1",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authors": ["mathdu07"],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
