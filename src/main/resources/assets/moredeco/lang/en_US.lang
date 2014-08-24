@@ -1,0 +1,83 @@
+#####################################################
+#                                                   #
+#             More Deco en_US lang file             #
+#                                                   #
+#####################################################
+itemGroup.moredeco=More Deco
+
+tile.wooden_table.oak.name=Oak wood table
+tile.wooden_table.spruce.name=Spruce wood table
+tile.wooden_table.birch.name=Birch wood table
+tile.wooden_table.jungle.name=Jungle wood table
+
+tile.planks_table.oak.name=Oak planks table
+tile.planks_table.spruce.name=Spruce planks table
+tile.planks_table.birch.name=Birch planks table
+tile.planks_table.jungle.name=Jungle planks table
+
+tile.glass_table.name=Glass table
+
+tile.stone_table.name=Stone table
+
+tile.cobblestone_table.name=Cobblestone table
+
+tile.stonebrick_table.default.name=Stone brick table
+tile.stonebrick_table.mossy.name=Mossy stone brick table
+tile.stonebrick_table.cracked.name=Cracked stone brick table
+tile.stonebrick_table.chiseled.name=Chiseled stone brick table
+
+tile.coal_table.name=Coal table
+
+tile.iron_table.name=Iron table
+
+tile.gold_table.name=Gold table
+
+tile.lapis_table.name=Lapis-lazuli table
+
+tile.redstone_table.name=Redstone table
+
+tile.diamond_table.name=Diamond table
+
+tile.emerald_table.name=Emerald table
+
+tile.sandstone_table.name=Sandstone table
+
+tile.quartz_table.default.name=Quartz table
+tile.quartz_table.chiseled.name=Chiseled quartz table
+tile.quartz_table.lines.name=Pillar quartz table
+
+tile.wool_table.white.name=White wool table
+tile.wool_table.orange.name=Orange wool table
+tile.wool_table.magenta.name=Magenta wool table
+tile.wool_table.light_blue.name=Light blue wool table
+tile.wool_table.yellow.name=Yellow wool table
+tile.wool_table.lime.name=Lime wool table
+tile.wool_table.pink.name=Pink wool table
+tile.wool_table.gray.name=Gray wool table
+tile.wool_table.silver.name=Silver wool table
+tile.wool_table.cyan.name=Cyan wool table
+tile.wool_table.purple.name=Purple wool table
+tile.wool_table.blue.name=Blue wool table
+tile.wool_table.brown.name=Brown wool table
+tile.wool_table.green.name=Green wool table
+tile.wool_table.red.name=Red wool table
+tile.wool_table.black.name=Black wool table
+
+tile.hardened_clay_table.name=Hardened clay table
+
+tile.stained_clay_table.white.name=White stained clay table
+tile.stained_clay_table.orange.name=Orange stained clay table
+tile.stained_clay_table.magenta.name=Magenta stained clay table
+tile.stained_clay_table.light_blue.name=Light blue stained clay table
+tile.stained_clay_table.yellow.name=Yellow stained clay table
+tile.stained_clay_table.lime.name=Lime stained clay table
+tile.stained_clay_table.pink.name=Pink stained clay table
+tile.stained_clay_table.gray.name=Gray stained clay table
+tile.stained_clay_table.silver.name=Silver stained clay table
+tile.stained_clay_table.cyan.name=Cyan stained clay table
+tile.stained_clay_table.purple.name=Purple stained clay table
+tile.stained_clay_table.blue.name=Blue stained clay table
+tile.stained_clay_table.brown.name=Brown stained clay table
+tile.stained_clay_table.green.name=Green stained clay table
+tile.stained_clay_table.red.name=Red stained clay table
+tile.stained_clay_table.black.name=Black stained clay table

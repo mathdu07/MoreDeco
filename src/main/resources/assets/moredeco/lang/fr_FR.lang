@@ -1,0 +1,83 @@
+#####################################################
+#                                                   #
+#             More Deco fr_FR lang file             #
+#                                                   #
+#####################################################
+itemGroup.moredeco=More Deco
+
+tile.wooden_table.oak.name=Table en bois de chêne
+tile.wooden_table.spruce.name=Table en bois de sapin
+tile.wooden_table.birch.name=Table en bois de bouleau
+tile.wooden_table.jungle.name=Table en bois d'acajou
+
+tile.planks_table.oak.name=Table en planches de chêne
+tile.planks_table.spruce.name=Table en planches de sapin
+tile.planks_table.birch.name=Table en planches de bouleau
+tile.planks_table.jungle.name=Table en planches d'acajou
+
+tile.glass_table.name=Table en verre
+
+tile.stone_table.name=Table en roche
+
+tile.cobblestone_table.name=Table en pierres
+
+tile.stonebrick_table.default.name=Table en pierre taillée
+tile.stonebrick_table.mossy.name=Table en pierre taillée moussue
+tile.stonebrick_table.cracked.name=Table en pierre taillée craquelées
+tile.stonebrick_table.chiseled.name=Table en pierre sculptée
+
+tile.coal_table.name=Table en charbon
+
+tile.iron_table.name=Table en fer
+
+tile.gold_table.name=Table en or
+
+tile.lapis_table.name=Table en lapis-lazuli
+
+tile.redstone_table.name=Table en redstone
+
+tile.diamond_table.name=Table en diamant
+
+tile.emerald_table.name=Table en émeraude
+
+tile.sandstone_table.name=Table en grès
+
+tile.quartz_table.default.name=Table en quartz
+tile.quartz_table.chiseled.name=Table en quartz gravé
+tile.quartz_table.lines.name=Table en quartz rayé
+
+tile.wool_table.white.name=Table en laine blanche
+tile.wool_table.orange.name=Table en laine orange
+tile.wool_table.magenta.name=Table en laine magenta
+tile.wool_table.light_blue.name=Table en laine bleu clair
+tile.wool_table.yellow.name=Table en laine jaune
+tile.wool_table.lime.name=Table en laine vert clair
+tile.wool_table.pink.name=Table en laine rose
+tile.wool_table.gray.name=Table en laine grise
+tile.wool_table.silver.name=Table en laine gris clair
+tile.wool_table.cyan.name=Table en laine cyan
+tile.wool_table.purple.name=Table en laine violette
+tile.wool_table.blue.name=Table en laine bleue
+tile.wool_table.brown.name=Table en laine marron
+tile.wool_table.green.name=Table en laine verte
+tile.wool_table.red.name=Table en laine rouge
+tile.wool_table.black.name=Table en laine noire
+
+tile.hardened_clay_table.name=Table en argile durcie
+
+tile.stained_clay_table.white.name=Table en argile durcie blanche
+tile.stained_clay_table.orange.name=Table en argile durcie orange
+tile.stained_clay_table.magenta.name=Table en argile durcie magenta
+tile.stained_clay_table.light_blue.name=Table en argile durcie bleu clair
+tile.stained_clay_table.yellow.name=Table en argile durcie jaune
+tile.stained_clay_table.lime.name=Table en argile durcie vert clair
+tile.stained_clay_table.pink.name=Table en argile durcie rose
+tile.stained_clay_table.gray.name=Table en argile durcie grise
+tile.stained_clay_table.silver.name=Table en argile durcie gris clair
+tile.stained_clay_table.cyan.name=Table en argile durcie cyan
+tile.stained_clay_table.purple.name=Table en argile durcie violette
+tile.stained_clay_table.blue.name=Table en argile durcie bleue
+tile.stained_clay_table.brown.name=Table en argile durcie marron
+tile.stained_clay_table.green.name=Table en argile durcie verte
+tile.stained_clay_table.red.name=Table en argile durcie rouge
+tile.stained_clay_table.black.name=Table en argile durcie noire

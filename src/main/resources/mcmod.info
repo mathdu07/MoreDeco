@@ -2,8 +2,9 @@
 {
   "modid": "moredeco",
   "name": "More Deco",
-  "description": "Ajoute plus de décoration dans minecraft : tables ...",
-  "version": "0.1",
+  "description": "EN: Adds more decoration blocks into minecraft, such as tables
+  FR: Ajoute plus de décoration dans minecraft : tables ...",
+  "version": "0.2-SNAPSHOT",
   "mcversion": "${mcversion}",
   "url": "",
   "updateUrl": "",
