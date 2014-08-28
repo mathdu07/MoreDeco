@@ -30,7 +30,7 @@ public class MoreDeco
     
     public static final CreativeTabs tab;
     public static final MoreDecoBlocks blocks;
-    public static final MoreDecoCrafts crafts;
+    public static final MoreDecoRecipes recipes;
     
     @EventHandler
     public void preInit(FMLPreInitializationEvent event) {
@@ -43,7 +43,7 @@ public class MoreDeco
     public void init(FMLInitializationEvent event)
     {
         System.out.println("Initializing " + NAME + " version : " + VERSION);
-        crafts.init();
+        recipes.init();
     }
  
     @EventHandler
@@ -60,6 +60,6 @@ public class MoreDeco
     {
     	tab = new MoreDecoTab();
     	blocks = new MoreDecoBlocks();
-    	crafts = new MoreDecoCrafts();
+    	recipes = new MoreDecoRecipes();
     }
 }
