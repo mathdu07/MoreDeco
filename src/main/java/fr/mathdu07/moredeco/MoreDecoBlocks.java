@@ -32,6 +32,10 @@ public final class MoreDecoBlocks {
 	public final int WOOL_TABLE_ID = WOODEN_TABLE_ID + 15;
 	public final int HARDENED_CLAY_TABLE_ID = WOODEN_TABLE_ID + 16;
 	public final int STAINED_CLAY_TABLE_ID = WOODEN_TABLE_ID + 17;
+	public final int NETHERRACK_TABLE_ID = WOODEN_TABLE_ID + 18;
+	public final int SOULSAND_TABLE_ID = WOODEN_TABLE_ID + 19;
+	public final int GLOWSTONE_TABLE_ID = WOODEN_TABLE_ID + 20;
+	public final int NETHER_BRICK_TABLE_ID = WOODEN_TABLE_ID + 21;
 	
 	protected void init()
 	{
@@ -90,6 +94,18 @@ public final class MoreDecoBlocks {
 		final Block stainedClayTable = new BlockTable(STAINED_CLAY_TABLE_ID, Block.stainedClay, Block.planks, 0, MoreDecoUtil.reverseArray(ItemDye.dyeItemNames, new String[ItemDye.dyeItemNames.length]))
 		.setUnlocalizedName("stained_clay_table");
 		GameRegistry.registerBlock(stainedClayTable, ItemMultipleBlock.class, "stained_clay_table");
+		
+		final Block netherrackTable = new BlockTable(NETHERRACK_TABLE_ID, Block.netherrack, Block.planks).setUnlocalizedName("netherrack_table");
+		GameRegistry.registerBlock(netherrackTable, "netherrack_table");
+		
+		final Block soulsandTable = new BlockTable(SOULSAND_TABLE_ID, Block.slowSand, Block.planks).setUnlocalizedName("soulsand_table");
+		GameRegistry.registerBlock(soulsandTable, "soulsand_table");
+		
+		final Block glowstoneTable = new BlockTable(GLOWSTONE_TABLE_ID, Block.glowStone, Block.planks).setUnlocalizedName("glowstone_table").setLightValue(1f);
+		GameRegistry.registerBlock(glowstoneTable, "glowstone_table");
+		
+		final Block netherBrickTable = new BlockTable(NETHER_BRICK_TABLE_ID, Block.netherBrick, Block.planks).setUnlocalizedName("nether_brick_table");
+		GameRegistry.registerBlock(netherBrickTable, "nether_brick_table");
 	}
 
 }

@@ -255,6 +255,17 @@ public class BlockTable extends Block implements IMultipleBlock {
 	public int getSubTypesCount() {
 		return suffixes.length;
 	}
+
+	@Override
+	public void onEntityCollidedWithBlock(World world, int x, int y, int z, Entity entity)
+	{
+		parentBlock.onEntityCollidedWithBlock(world, x, y, z, entity);
+	}
+	
+	public AxisAlignedBB getCollisionBoundingBoxFromPool(World world, int x, int y, int z)
+	{
+		return parentBlock.getCollisionBoundingBoxFromPool(world, x, y, z);
+	}
 	
 	
 

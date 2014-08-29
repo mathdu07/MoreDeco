@@ -150,6 +150,30 @@ public final class MoreDecoCrafts {
 			}
 			
 		}
+		
+		GameRegistry.addRecipe(new ItemStack(Block.blocksList[MoreDeco.blocks.NETHERRACK_TABLE_ID], 3), new Object[]{
+			"###", "I I", "I I",
+			'#', Block.netherrack,
+			'I', Item.stick
+		});
+		
+		GameRegistry.addRecipe(new ItemStack(Block.blocksList[MoreDeco.blocks.SOULSAND_TABLE_ID], 3), new Object[]{
+			"###", "I I", "I I",
+			'#', Block.slowSand,
+			'I', Item.stick
+		});
+		
+		GameRegistry.addRecipe(new ItemStack(Block.blocksList[MoreDeco.blocks.GLOWSTONE_TABLE_ID], 3), new Object[]{
+			"###", "I I", "I I",
+			'#', Block.glowStone,
+			'I', Item.stick
+		});
+		
+		GameRegistry.addRecipe(new ItemStack(Block.blocksList[MoreDeco.blocks.NETHER_BRICK_TABLE_ID], 3), new Object[]{
+			"###", "I I", "I I",
+			'#', Block.netherBrick,
+			'I', Item.stick
+		});
 	}
 
 }

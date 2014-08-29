@@ -81,3 +81,11 @@ tile.stained_clay_table.brown.name=Brown stained clay table
 tile.stained_clay_table.green.name=Green stained clay table
 tile.stained_clay_table.red.name=Red stained clay table
 tile.stained_clay_table.black.name=Black stained clay table
+
+tile.netherrack_table.name=Netherrack table
+
+tile.soulsand_table.name=Soulsand table
+
+tile.glowstone_table.name=Glowstone table
+
+tile.nether_brick_table.name=Nether brick table

@@ -81,3 +81,11 @@ tile.stained_clay_table.brown.name=Table en argile durcie marron
 tile.stained_clay_table.green.name=Table en argile durcie verte
 tile.stained_clay_table.red.name=Table en argile durcie rouge
 tile.stained_clay_table.black.name=Table en argile durcie noire
+
+tile.netherrack_table.name=Table en roche du nether
+
+tile.soulsand_table.name=Table en sable des âmes
+
+tile.glowstone_table.name=Table en pierre lumineuse
+
+tile.nether_brick_table.name=Table en brique du nether
