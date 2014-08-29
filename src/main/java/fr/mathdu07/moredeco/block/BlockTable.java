@@ -17,9 +17,8 @@ import net.minecraft.world.World;
 import net.minecraftforge.common.ForgeDirection;
 import fr.mathdu07.moredeco.MoreDeco;
 
-public class BlockTable extends Block implements IMultipleBlock {
+public class BlockTable extends BlockChildren implements IMultipleBlock {
 	
-	private final Block parentBlock;
 	private Block legBlock;
 	private int legMetadata;
 	private String[] suffixes;
@@ -34,9 +33,7 @@ public class BlockTable extends Block implements IMultipleBlock {
 	 */
 	public BlockTable(int id, Block parentBlock, String... suffix)
 	{
-		super(id, parentBlock.blockMaterial);
-		this.parentBlock = parentBlock;
-		this.setHardness(parentBlock.blockHardness);
+		super(id, parentBlock);
 		this.setResistance(parentBlock.blockResistance / 3.f);
 		this.setLightOpacity(0);
 		this.setCreativeTab(MoreDeco.tab);
@@ -157,22 +154,6 @@ public class BlockTable extends Block implements IMultipleBlock {
 	}
 
 	@Override
-	public boolean getTickRandomly() {
-		return parentBlock.getTickRandomly();
-	}
-
-	@Override
-	public Icon getIcon(int side, int data) {
-		return parentBlock.getIcon(side, data);
-	}
-
-	@Override
-	public Icon getBlockTexture(IBlockAccess par1iBlockAccess, int par2,
-			int par3, int par4, int par5) {
-		return parentBlock.getBlockTexture(par1iBlockAccess, par2, par3, par4, par5);
-	}
-
-	@Override
 	public boolean isOpaqueCube() {
 		return false;
 	}
@@ -180,11 +161,6 @@ public class BlockTable extends Block implements IMultipleBlock {
 	@Override
 	public int damageDropped(int metadata) {
 		return metadata;
-	}
-
-	@Override
-	public int getRenderBlockPass() {
-		return parentBlock.getRenderBlockPass();
 	}
 
 	@Override
@@ -196,36 +172,6 @@ public class BlockTable extends Block implements IMultipleBlock {
 		}
 		else
 			list.add(new ItemStack(id, 1, 0));
-	}
-
-	@Override
-	public boolean canDropFromExplosion(Explosion par1Explosion) {
-		return parentBlock.canDropFromExplosion(par1Explosion);
-	}
-
-	@Override
-	public void registerIcons(IconRegister par1IconRegister) {
-		
-	}
-
-	@Override
-	public boolean canHarvestBlock(EntityPlayer player, int meta) {
-		return parentBlock.canHarvestBlock(player, meta);
-	}
-
-	@Override
-	public int getFlammability(IBlockAccess world, int x, int y, int z, int metadata, ForgeDirection face) {
-		return parentBlock.getFlammability(world, x, y, z, metadata, face);
-	}
-
-	@Override
-	public int getFireSpreadSpeed(World world, int x, int y, int z, int metadata, ForgeDirection face) {
-		return parentBlock.getFireSpreadSpeed(world, x, y, z, metadata, face);
-	}
-
-	@Override
-	public boolean canSilkHarvest(World world, EntityPlayer player, int x, int y, int z, int metadata) {
-		return parentBlock.canSilkHarvest(world, player, x, y, z, metadata);
 	}
 
 	@Override
@@ -255,18 +201,5 @@ public class BlockTable extends Block implements IMultipleBlock {
 	public int getSubTypesCount() {
 		return suffixes.length;
 	}
-
-	@Override
-	public void onEntityCollidedWithBlock(World world, int x, int y, int z, Entity entity)
-	{
-		parentBlock.onEntityCollidedWithBlock(world, x, y, z, entity);
-	}
-	
-	public AxisAlignedBB getCollisionBoundingBoxFromPool(World world, int x, int y, int z)
-	{
-		return parentBlock.getCollisionBoundingBoxFromPool(world, x, y, z);
-	}
-	
-	
 
 }
