@@ -7,7 +7,7 @@ import net.minecraft.item.ItemStack;
 import cpw.mods.fml.common.registry.GameRegistry;
 import fr.mathdu07.moredeco.block.BlockTable;
 
-public final class MoreDecoCrafts {
+public final class MoreDecoRecipes {
 	
 	protected void init()
 	{
@@ -117,14 +117,8 @@ public final class MoreDecoCrafts {
 		        '#', new ItemStack(Block.cloth, 1, i),
 		        'I', Item.stick
 			});
-			
-			for (int j = 0; j < woolTable.getSubTypesCount(); j++)
-			{
-				if (j != i)
-					GameRegistry.addShapelessRecipe(new ItemStack(woolTable, 1, i), 
-							new ItemStack(Item.itemsList[woolTable.blockID], 1, j), new ItemStack(Item.dyePowder, 1, BlockColored.getDyeFromBlock(i)));
-			}
-			
+			GameRegistry.addShapelessRecipe(new ItemStack(woolTable, 1, i), new ItemStack(Item.itemsList[woolTable.blockID]),
+					new ItemStack(Item.dyePowder, 1, BlockColored.getDyeFromBlock(i)));
 		}
 		
 		GameRegistry.addRecipe(new ItemStack(Block.blocksList[MoreDeco.blocks.HARDENED_CLAY_TABLE_ID], 3), new Object[]{
@@ -133,6 +127,7 @@ public final class MoreDecoCrafts {
 			'I', Item.stick
 		});
 		
+		BlockTable hardenedClayTable = (BlockTable) Block.blocksList[MoreDeco.blocks.HARDENED_CLAY_TABLE_ID];
 		BlockTable stainedClayTable = (BlockTable) Block.blocksList[MoreDeco.blocks.STAINED_CLAY_TABLE_ID];
 		for (int i = 0; i < stainedClayTable.getSubTypesCount(); i++)
 		{
@@ -142,12 +137,10 @@ public final class MoreDecoCrafts {
 		        'I', Item.stick
 			});
 			
-			for (int j = 0; j < stainedClayTable.getSubTypesCount(); j++)
-			{
-				if (j != i)
-					GameRegistry.addShapelessRecipe(new ItemStack(stainedClayTable, 1, i), 
-							new ItemStack(Item.itemsList[stainedClayTable.blockID], 1, j), new ItemStack(Item.dyePowder, 1, BlockColored.getDyeFromBlock(i)));
-			}
+			GameRegistry.addShapelessRecipe(new ItemStack(stainedClayTable, 1, i), new ItemStack(Item.itemsList[hardenedClayTable.blockID]),
+					new ItemStack(Item.dyePowder, 1, BlockColored.getDyeFromBlock(i)));
+			GameRegistry.addShapelessRecipe(new ItemStack(stainedClayTable, 1, i), new ItemStack(Item.itemsList[stainedClayTable.blockID]),
+					new ItemStack(Item.dyePowder, 1, BlockColored.getDyeFromBlock(i)));
 			
 		}
 		
