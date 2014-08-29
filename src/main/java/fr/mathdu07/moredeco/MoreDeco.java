@@ -9,7 +9,8 @@ import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.network.NetworkMod;
-import cpw.mods.fml.common.registry.LanguageRegistry;
+import cpw.mods.fml.common.registry.EntityRegistry;
+import fr.mathdu07.moredeco.entity.EntityMountableBlock;
 import fr.mathdu07.moredeco.proxy.CommonProxy;
 import fr.mathdu07.moredeco.tabs.MoreDecoTab;
 
@@ -37,6 +38,8 @@ public class MoreDeco
     	proxy.registerRenderers();
     	
     	blocks.init();
+    	
+    	EntityRegistry.registerModEntity(EntityMountableBlock.class, "entity_mountable_block", 1, this, 5, 3, false);
     }
     
     @EventHandler

@@ -52,11 +52,6 @@ public class BlockChildren extends Block {
 			int par3, int par4, int par5) {
 		return parentBlock.getBlockTexture(par1iBlockAccess, par2, par3, par4, par5);
 	}
-	
-	@Override
-	public boolean isOpaqueCube() {
-		return parentBlock.isOpaqueCube();
-	}
 
 	@Override
 	public int damageDropped(int metadata) {
