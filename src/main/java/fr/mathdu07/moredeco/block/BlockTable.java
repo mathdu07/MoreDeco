@@ -27,7 +27,7 @@ public class BlockTable extends BlockChildren implements IMultipleBlock {
 	 * A table block, with an uniform texture (leg's texture is the same as top's texture)
 	 * 
 	 * @param id - block's id
-	 * @param parentBlock - model of the table, the table herits some of it's properties (texutre, hardness ...)
+	 * @param parentBlock - model of the table, the table inherits some of it's properties (texture, hardness ...)
 	 * @param suffix - if the parent block uses metadata, add all suffix for the unlocalized names, 
 	 *         to give a name which changes with metadata
 	 */
@@ -36,7 +36,7 @@ public class BlockTable extends BlockChildren implements IMultipleBlock {
 		super(id, parentBlock);
 		this.setResistance(parentBlock.blockResistance / 3.f);
 		this.setLightOpacity(0);
-		this.setCreativeTab(MoreDeco.tab);
+		this.setCreativeTab(MoreDeco.tabTables);
 		this.suffixes = suffix;
 		
 		this.legBlock = null;
@@ -47,7 +47,7 @@ public class BlockTable extends BlockChildren implements IMultipleBlock {
 	 * A table block
 	 * 
 	 * @param id - block's id
-	 * @param parentBlock - model of the table, the table herits some of it's properties (texutre, hardness ...)
+	 * @param parentBlock - model of the table, the table inherits some of it's properties (texture, hardness ...)
 	 * @param leg - the block model for the leg
 	 * @param suffix - if the parent block uses metadata, add all suffix for the unlocalized names, 
 	 *         to give a name which changes with metadata
@@ -61,7 +61,7 @@ public class BlockTable extends BlockChildren implements IMultipleBlock {
 	 * A table block
 	 * 
 	 * @param id - block's id
-	 * @param parentBlock - model of the table, the table herits some of it's properties (texutre, hardness ...)
+	 * @param parentBlock - model of the table, the table inherits some of it's properties (texture, hardness ...)
 	 * @param leg - the block model for the leg
 	 * @param legMetadata - the metadata to use to get leg's icon, if -1, then the metadata of this block is used
 	 * @param suffix - if the parent block uses metadata, add all suffix for the unlocalized names, 
@@ -136,9 +136,7 @@ public class BlockTable extends BlockChildren implements IMultipleBlock {
 			setBlockBounds(0, 0.9f, 0, 1, 1, 1);
 	}
 
-
-
-	public boolean isBlockTable(IBlockAccess world, int x, int y, int z)
+	public static boolean isBlockTable(IBlockAccess world, int x, int y, int z)
 	{
 		return Block.blocksList[world.getBlockId(x, y, z)] instanceof BlockTable;
 	}

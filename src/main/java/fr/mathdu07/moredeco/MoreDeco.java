@@ -12,7 +12,8 @@ import cpw.mods.fml.common.network.NetworkMod;
 import cpw.mods.fml.common.registry.EntityRegistry;
 import fr.mathdu07.moredeco.entity.EntityMountableBlock;
 import fr.mathdu07.moredeco.proxy.CommonProxy;
-import fr.mathdu07.moredeco.tabs.MoreDecoTab;
+import fr.mathdu07.moredeco.tabs.MoreDecoChairTab;
+import fr.mathdu07.moredeco.tabs.MoreDecoTableTab;
 
 @Mod(modid = MoreDeco.MODID, version = MoreDeco.VERSION, useMetadata = true, acceptedMinecraftVersions = "[1.6.2,1.6.4]")
 @NetworkMod(clientSideRequired = true, serverSideRequired = false)
@@ -29,7 +30,7 @@ public class MoreDeco
     		serverSide = "fr.mathdu07.moredeco.proxy.CommonProxy")
     public static CommonProxy proxy;
     
-    public static final CreativeTabs tab;
+    public static final CreativeTabs tabTables, tabChairs;
     public static final MoreDecoBlocks blocks;
     public static final MoreDecoRecipes recipes;
     
@@ -61,7 +62,8 @@ public class MoreDeco
     
     static
     {
-    	tab = new MoreDecoTab();
+    	tabTables = new MoreDecoTableTab();
+    	tabChairs = new MoreDecoChairTab();
     	blocks = new MoreDecoBlocks();
     	recipes = new MoreDecoRecipes();
     }

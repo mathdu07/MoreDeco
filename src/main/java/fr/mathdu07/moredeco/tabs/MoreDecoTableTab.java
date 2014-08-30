@@ -5,10 +5,10 @@ import net.minecraft.block.Block;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemStack;
 
-public class MoreDecoTab extends CreativeTabs {
+public class MoreDecoTableTab extends CreativeTabs {
 
-	public MoreDecoTab() {
-		super("moredeco");
+	public MoreDecoTableTab() {
+		super("moredeco_table");
 	}
 
 	@Override

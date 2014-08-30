@@ -3,8 +3,14 @@
 #             More Deco en_US lang file             #
 #                                                   #
 #####################################################
-itemGroup.moredeco=More Deco
+itemGroup.moredeco_table=Tables
+itemGroup.moredeco_chair=Chairs
 
+#####################################################
+#                                                   #
+#                     Tables                        #
+#                                                   #
+#####################################################
 tile.wooden_table.oak.name=Oak wood table
 tile.wooden_table.spruce.name=Spruce wood table
 tile.wooden_table.birch.name=Birch wood table
@@ -54,7 +60,7 @@ tile.wool_table.yellow.name=Yellow wool table
 tile.wool_table.lime.name=Lime wool table
 tile.wool_table.pink.name=Pink wool table
 tile.wool_table.gray.name=Gray wool table
-tile.wool_table.silver.name=Silver wool table
+tile.wool_table.silver.name=Light gray wool table
 tile.wool_table.cyan.name=Cyan wool table
 tile.wool_table.purple.name=Purple wool table
 tile.wool_table.blue.name=Blue wool table
@@ -73,7 +79,7 @@ tile.stained_clay_table.yellow.name=Yellow stained clay table
 tile.stained_clay_table.lime.name=Lime stained clay table
 tile.stained_clay_table.pink.name=Pink stained clay table
 tile.stained_clay_table.gray.name=Gray stained clay table
-tile.stained_clay_table.silver.name=Silver stained clay table
+tile.stained_clay_table.silver.name=Light gray stained clay table
 tile.stained_clay_table.cyan.name=Cyan stained clay table
 tile.stained_clay_table.purple.name=Purple stained clay table
 tile.stained_clay_table.blue.name=Blue stained clay table
@@ -89,3 +95,93 @@ tile.soulsand_table.name=Soul sand table
 tile.glowstone_table.name=Glowstone table
 
 tile.nether_brick_table.name=Nether brick table
+
+#####################################################
+#                                                   #
+#                     Chairs                        #
+#                                                   #
+#####################################################
+tile.wooden_chair.oak.name=Oak wood chair
+tile.wooden_chair.spruce.name=Spruce wood chair
+tile.wooden_chair.birch.name=Birch wood chair
+tile.wooden_chair.jungle.name=Jungle wood chair
+
+tile.planks_chair.oak.name=Oak planks chair
+tile.planks_chair.spruce.name=Spruce planks chair
+tile.planks_chair.birch.name=Birch planks chair
+tile.planks_chair.jungle.name=Jungle planks chair
+
+tile.glass_chair.name=Glass chair
+
+tile.stone_chair.name=Stone chair
+
+tile.cobblestone_chair.name=Cobblestone chair
+
+tile.stonebrick_chair.default.name=Stone brick chair
+tile.stonebrick_chair.mossy.name=Mossy stone brick chair
+tile.stonebrick_chair.cracked.name=Cracked stone brick chair
+tile.stonebrick_chair.chiseled.name=Chiseled stone brick chair
+
+tile.coal_chair.name=Coal chair
+
+tile.iron_chair.name=Iron chair
+
+tile.gold_chair.name=Gold chair
+
+tile.lapis_chair.name=Lapis-lazuli chair
+
+tile.redstone_chair.name=Redstone chair
+
+tile.diamond_chair.name=Diamond chair
+
+tile.emerald_chair.name=Emerald chair
+
+tile.sandstone_chair.name=Sandstone chair
+
+tile.quartz_chair.default.name=Quartz chair
+tile.quartz_chair.chiseled.name=Chiseled quartz chair
+tile.quartz_chair.lines.name=Pillar quartz chair
+
+tile.wool_chair.white.name=White wool chair
+tile.wool_chair.orange.name=Orange wool chair
+tile.wool_chair.magenta.name=Magenta wool chair
+tile.wool_chair.light_blue.name=Light blue wool chair
+tile.wool_chair.yellow.name=Yellow wool chair
+tile.wool_chair.lime.name=Lime wool chair
+tile.wool_chair.pink.name=Pink wool chair
+tile.wool_chair.gray.name=Gray wool chair
+tile.wool_chair.silver.name=Light gray wool chair
+tile.wool_chair.cyan.name=Cyan wool chair
+tile.wool_chair.purple.name=Purple wool chair
+tile.wool_chair.blue.name=Blue wool chair
+tile.wool_chair.brown.name=Brown wool chair
+tile.wool_chair.green.name=Green wool chair
+tile.wool_chair.red.name=Red wool chair
+tile.wool_chair.black.name=Black wool chair
+
+tile.hardened_clay_chair.name=Hardened clay chair
+
+tile.stained_clay_chair.white.name=White stained clay chair
+tile.stained_clay_chair.orange.name=Orange stained clay chair
+tile.stained_clay_chair.magenta.name=Magenta stained clay chair
+tile.stained_clay_chair.light_blue.name=Light blue stained clay chair
+tile.stained_clay_chair.yellow.name=Yellow stained clay chair
+tile.stained_clay_chair.lime.name=Lime stained clay chair
+tile.stained_clay_chair.pink.name=Pink stained clay chair
+tile.stained_clay_chair.gray.name=Gray stained clay chair
+tile.stained_clay_chair.silver.name=Light gray stained clay chair
+tile.stained_clay_chair.cyan.name=Cyan stained clay chair
+tile.stained_clay_chair.purple.name=Purple stained clay chair
+tile.stained_clay_chair.blue.name=Blue stained clay chair
+tile.stained_clay_chair.brown.name=Brown stained clay chair
+tile.stained_clay_chair.green.name=Green stained clay chair
+tile.stained_clay_chair.red.name=Red stained clay chair
+tile.stained_clay_chair.black.name=Black stained clay chair
+
+tile.netherrack_chair.name=Netherrack chair
+
+tile.soulsand_chair.name=Soul sand chair
+
+tile.glowstone_chair.name=Glowstone chair
+
+tile.nether_brick_chair.name=Nether brick chair

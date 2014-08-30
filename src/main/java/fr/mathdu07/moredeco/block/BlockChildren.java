@@ -113,10 +113,5 @@ public class BlockChildren extends Block {
 	{
 		parentBlock.onEntityCollidedWithBlock(world, x, y, z, entity);
 	}
-	
-	public AxisAlignedBB getCollisionBoundingBoxFromPool(World world, int x, int y, int z)
-	{
-		return parentBlock.getCollisionBoundingBoxFromPool(world, x, y, z);
-	}
 
 }

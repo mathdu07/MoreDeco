@@ -29,18 +29,13 @@ public abstract class BlockMountable extends BlockChildren
 	public void tryToMount(World world, int x, int y, int z, EntityPlayer player, float xOffset, float yOffset, float zOffset)
 	{
 		if (!world.isRemote)
-		{
-			List list = world.getEntitiesWithinAABB(EntityMountableBlock.class, AxisAlignedBB.getAABBPool().getAABB(x, y, z, x + 1D, y + 1D, z + 1D));
-			Iterator<EntityMountableBlock> iterator = list.iterator();
-			
-			while (iterator.hasNext())
-			{
-				EntityMountableBlock entitymountableblock = iterator.next();				
-				entitymountableblock.setDead();
-	        }
-
+		{			
 	        EntityMountableBlock entitymountableblock = new EntityMountableBlock(world, player, x, y, z, xOffset, yOffset, zOffset);
 	        world.spawnEntityInWorld(entitymountableblock);
+	        
+	        if (player.ridingEntity != null)
+	        	player.mountEntity(null);
+	        
 	        player.mountEntity(entitymountableblock);
 	    }
 	}

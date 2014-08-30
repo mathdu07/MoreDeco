@@ -16,8 +16,8 @@ import net.minecraft.world.World;
 
 public class EntityMountableBlock extends Entity
 {
-	private int blockX, blockY, blockZ;
-	private int blockId;
+	public int blockX, blockY, blockZ;
+	public int blockId;
 	private EntityPlayer player;
 	
 	public EntityMountableBlock(World world)
