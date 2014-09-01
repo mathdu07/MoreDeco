@@ -5,6 +5,7 @@
 #####################################################
 itemGroup.moredeco_table=Tables
 itemGroup.moredeco_chair=Chairs
+itemGroup.moredeco_stool=Stools
 
 #####################################################
 #                                                   #
@@ -185,3 +186,93 @@ tile.soulsand_chair.name=Soul sand chair
 tile.glowstone_chair.name=Glowstone chair
 
 tile.nether_brick_chair.name=Nether brick chair
+
+#####################################################
+#                                                   #
+#                     Stools                        #
+#                                                   #
+#####################################################
+tile.wooden_stool.oak.name=Oak wood stool
+tile.wooden_stool.spruce.name=Spruce wood stool
+tile.wooden_stool.birch.name=Birch wood stool
+tile.wooden_stool.jungle.name=Jungle wood stool
+
+tile.planks_stool.oak.name=Oak planks stool
+tile.planks_stool.spruce.name=Spruce planks stool
+tile.planks_stool.birch.name=Birch planks stool
+tile.planks_stool.jungle.name=Jungle planks stool
+
+tile.glass_stool.name=Glass stool
+
+tile.stone_stool.name=Stone stool
+
+tile.cobblestone_stool.name=Cobblestone stool
+
+tile.stonebrick_stool.default.name=Stone brick stool
+tile.stonebrick_stool.mossy.name=Mossy stone brick stool
+tile.stonebrick_stool.cracked.name=Cracked stone brick stool
+tile.stonebrick_stool.chiseled.name=Chiseled stone brick stool
+
+tile.coal_stool.name=Coal stool
+
+tile.iron_stool.name=Iron stool
+
+tile.gold_stool.name=Gold stool
+
+tile.lapis_stool.name=Lapis-lazuli stool
+
+tile.redstone_stool.name=Redstone stool
+
+tile.diamond_stool.name=Diamond stool
+
+tile.emerald_stool.name=Emerald stool
+
+tile.sandstone_stool.name=Sandstone stool
+
+tile.quartz_stool.default.name=Quartz stool
+tile.quartz_stool.chiseled.name=Chiseled quartz stool
+tile.quartz_stool.lines.name=Pillar quartz stool
+
+tile.wool_stool.white.name=White wool stool
+tile.wool_stool.orange.name=Orange wool stool
+tile.wool_stool.magenta.name=Magenta wool stool
+tile.wool_stool.light_blue.name=Light blue wool stool
+tile.wool_stool.yellow.name=Yellow wool stool
+tile.wool_stool.lime.name=Lime wool stool
+tile.wool_stool.pink.name=Pink wool stool
+tile.wool_stool.gray.name=Gray wool stool
+tile.wool_stool.silver.name=Light gray wool stool
+tile.wool_stool.cyan.name=Cyan wool stool
+tile.wool_stool.purple.name=Purple wool stool
+tile.wool_stool.blue.name=Blue wool stool
+tile.wool_stool.brown.name=Brown wool stool
+tile.wool_stool.green.name=Green wool stool
+tile.wool_stool.red.name=Red wool stool
+tile.wool_stool.black.name=Black wool stool
+
+tile.hardened_clay_stool.name=Hardened clay stool
+
+tile.stained_clay_stool.white.name=White stained clay stool
+tile.stained_clay_stool.orange.name=Orange stained clay stool
+tile.stained_clay_stool.magenta.name=Magenta stained clay stool
+tile.stained_clay_stool.light_blue.name=Light blue stained clay stool
+tile.stained_clay_stool.yellow.name=Yellow stained clay stool
+tile.stained_clay_stool.lime.name=Lime stained clay stool
+tile.stained_clay_stool.pink.name=Pink stained clay stool
+tile.stained_clay_stool.gray.name=Gray stained clay stool
+tile.stained_clay_stool.silver.name=Light gray stained clay stool
+tile.stained_clay_stool.cyan.name=Cyan stained clay stool
+tile.stained_clay_stool.purple.name=Purple stained clay stool
+tile.stained_clay_stool.blue.name=Blue stained clay stool
+tile.stained_clay_stool.brown.name=Brown stained clay stool
+tile.stained_clay_stool.green.name=Green stained clay stool
+tile.stained_clay_stool.red.name=Red stained clay stool
+tile.stained_clay_stool.black.name=Black stained clay stool
+
+tile.netherrack_stool.name=Netherrack stool
+
+tile.soulsand_stool.name=Soul sand stool
+
+tile.glowstone_stool.name=Glowstone stool
+
+tile.nether_brick_stool.name=Nether brick stool

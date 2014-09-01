@@ -5,6 +5,7 @@
 #####################################################
 itemGroup.moredeco_table=Tables
 itemGroup.moredeco_chair=Chaises
+itemGroup.moredeco_stool=Tabourets
 
 #####################################################
 #                                                   #
@@ -185,3 +186,93 @@ tile.soulsand_chair.name=Chaise en sable des âmes
 tile.glowstone_chair.name=Chaise en pierre lumineuse
 
 tile.nether_brick_chair.name=Chaise en brique du nether
+
+#####################################################
+#                                                   #
+#                     Stools                        #
+#                                                   #
+#####################################################
+tile.wooden_stool.oak.name=Tabouret en bois de chêne
+tile.wooden_stool.spruce.name=Tabouret en bois de sapin
+tile.wooden_stool.birch.name=Tabouret en bois de bouleau
+tile.wooden_stool.jungle.name=Tabouret en bois d'acajou
+
+tile.planks_stool.oak.name=Tabouret en planches de chêne
+tile.planks_stool.spruce.name=Tabouret en planches de sapin
+tile.planks_stool.birch.name=Tabouret en planches de bouleau
+tile.planks_stool.jungle.name=Tabouret en planches d'acajou
+
+tile.glass_stool.name=Tabouret en verre
+
+tile.stone_stool.name=Tabouret en roche
+
+tile.cobblestone_stool.name=Tabouret en pierres
+
+tile.stonebrick_stool.default.name=Tabouret en pierre taillée
+tile.stonebrick_stool.mossy.name=Tabouret en pierre taillée moussue
+tile.stonebrick_stool.cracked.name=Tabouret en pierre taillée craquelées
+tile.stonebrick_stool.chiseled.name=Tabouret en pierre sculptée
+
+tile.coal_stool.name=Tabouret en charbon
+
+tile.iron_stool.name=Tabouret en fer
+
+tile.gold_stool.name=Tabouret en or
+
+tile.lapis_stool.name=Tabouret en lapis-lazuli
+
+tile.redstone_stool.name=Tabouret en redstone
+
+tile.diamond_stool.name=Tabouret en diamant
+
+tile.emerald_stool.name=Tabouret en émeraude
+
+tile.sandstone_stool.name=Tabouret en grès
+
+tile.quartz_stool.default.name=Tabouret en quartz
+tile.quartz_stool.chiseled.name=Tabouret en quartz gravé
+tile.quartz_stool.lines.name=Tabouret en quartz rayé
+
+tile.wool_stool.white.name=Tabouret en laine blanche
+tile.wool_stool.orange.name=Tabouret en laine orange
+tile.wool_stool.magenta.name=Tabouret en laine magenta
+tile.wool_stool.light_blue.name=Tabouret en laine bleu clair
+tile.wool_stool.yellow.name=Tabouret en laine jaune
+tile.wool_stool.lime.name=Tabouret en laine vert clair
+tile.wool_stool.pink.name=Tabouret en laine rose
+tile.wool_stool.gray.name=Tabouret en laine grise
+tile.wool_stool.silver.name=Tabouret en laine gris clair
+tile.wool_stool.cyan.name=Tabouret en laine cyan
+tile.wool_stool.purple.name=Tabouret en laine violette
+tile.wool_stool.blue.name=Tabouret en laine bleue
+tile.wool_stool.brown.name=Tabouret en laine marron
+tile.wool_stool.green.name=Tabouret en laine verte
+tile.wool_stool.red.name=Tabouret en laine rouge
+tile.wool_stool.black.name=Tabouret en laine noire
+
+tile.hardened_clay_stool.name=Tabouret en argile durcie
+
+tile.stained_clay_stool.white.name=Tabouret en argile durcie blanche
+tile.stained_clay_stool.orange.name=Tabouret en argile durcie orange
+tile.stained_clay_stool.magenta.name=Tabouret en argile durcie magenta
+tile.stained_clay_stool.light_blue.name=Tabouret en argile durcie bleu clair
+tile.stained_clay_stool.yellow.name=Tabouret en argile durcie jaune
+tile.stained_clay_stool.lime.name=Tabouret en argile durcie vert clair
+tile.stained_clay_stool.pink.name=Tabouret en argile durcie rose
+tile.stained_clay_stool.gray.name=Tabouret en argile durcie grise
+tile.stained_clay_stool.silver.name=Tabouret en argile durcie gris clair
+tile.stained_clay_stool.cyan.name=Tabouret en argile durcie cyan
+tile.stained_clay_stool.purple.name=Tabouret en argile durcie violette
+tile.stained_clay_stool.blue.name=Tabouret en argile durcie bleue
+tile.stained_clay_stool.brown.name=Tabouret en argile durcie marron
+tile.stained_clay_stool.green.name=Tabouret en argile durcie verte
+tile.stained_clay_stool.red.name=Tabouret en argile durcie rouge
+tile.stained_clay_stool.black.name=Tabouret en argile durcie noire
+
+tile.netherrack_stool.name=Tabouret en roche du nether
+
+tile.soulsand_stool.name=Tabouret en sable des âmes
+
+tile.glowstone_stool.name=Tabouret en pierre lumineuse
+
+tile.nether_brick_stool.name=Tabouret en brique du nether

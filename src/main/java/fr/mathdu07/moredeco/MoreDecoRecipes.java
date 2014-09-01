@@ -6,6 +6,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import cpw.mods.fml.common.registry.GameRegistry;
 import fr.mathdu07.moredeco.block.BlockChair;
+import fr.mathdu07.moredeco.block.BlockStool;
 import fr.mathdu07.moredeco.block.BlockTable;
 
 public final class MoreDecoRecipes {
@@ -16,6 +17,13 @@ public final class MoreDecoRecipes {
 		for (int i = 0; i < woodenTable.getSubTypesCount(); i++)
 			GameRegistry.addRecipe(new ItemStack(woodenTable, 3, i), new Object[]{
 				"###", "I I", "I I",
+		        '#', new ItemStack(Block.wood, 1, i),
+		        'I', Item.stick
+			});
+		BlockStool woodenStool = (BlockStool) Block.blocksList[MoreDeco.blocks.WOODEN_STOOL_ID];
+		for (int i = 0; i < woodenStool.getSubTypesCount(); i++)
+			GameRegistry.addRecipe(new ItemStack(woodenStool, 3, i), new Object[]{
+				"###", "I I",
 		        '#', new ItemStack(Block.wood, 1, i),
 		        'I', Item.stick
 			});
@@ -34,6 +42,13 @@ public final class MoreDecoRecipes {
 		        '#', new ItemStack(Block.planks, 1, i),
 		        'I', Item.stick
 			});
+		BlockStool planksStool = (BlockStool) Block.blocksList[MoreDeco.blocks.PLANKS_STOOL_ID];
+		for (int i = 0; i < planksStool.getSubTypesCount(); i++)
+			GameRegistry.addRecipe(new ItemStack(planksStool, 3, i), new Object[]{
+				"###", "I I",
+		        '#', new ItemStack(Block.planks, 1, i),
+		        'I', Item.stick
+			});
 		BlockChair planksChair = (BlockChair) Block.blocksList[MoreDeco.blocks.PLANKS_CHAIR_ID];
 		for (int i = 0; i < planksChair.getSubTypesCount(); i++)
 			GameRegistry.addRecipe(new ItemStack(planksChair, 4, 4 * i), new Object[]{
@@ -44,6 +59,11 @@ public final class MoreDecoRecipes {
 		
 		GameRegistry.addRecipe(new ItemStack(Block.blocksList[MoreDeco.blocks.GLASS_TABLE_ID], 3), new Object[]{
 			"###", "I I", "I I",
+			'#', Block.glass,
+			'I', Item.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(Block.blocksList[MoreDeco.blocks.GLASS_STOOL_ID], 3), new Object[]{
+			"###", "I I",
 			'#', Block.glass,
 			'I', Item.stick
 		});
@@ -58,6 +78,11 @@ public final class MoreDecoRecipes {
 			'#', Block.stone,
 			'I', Item.stick
 		});
+		GameRegistry.addRecipe(new ItemStack(Block.blocksList[MoreDeco.blocks.STONE_STOOL_ID], 3), new Object[]{
+			"###", "I I",
+			'#', Block.stone,
+			'I', Item.stick
+		});
 		GameRegistry.addRecipe(new ItemStack(Block.blocksList[MoreDeco.blocks.STONE_CHAIR_ID], 4), new Object[]{
 			"#  ", "###", "I I",
 			'#', Block.stone,
@@ -66,6 +91,11 @@ public final class MoreDecoRecipes {
 		
 		GameRegistry.addRecipe(new ItemStack(Block.blocksList[MoreDeco.blocks.COBBLESTONE_TABLE_ID], 3), new Object[]{
 			"###", "I I", "I I",
+			'#', Block.cobblestone,
+			'I', Item.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(Block.blocksList[MoreDeco.blocks.COBBLESTONE_STOOL_ID], 3), new Object[]{
+			"###", "I I",
 			'#', Block.cobblestone,
 			'I', Item.stick
 		});
@@ -82,6 +112,13 @@ public final class MoreDecoRecipes {
 		        '#', new ItemStack(Block.stoneBrick, 1, i),
 		        'I', Item.stick
 			});
+		BlockStool stonebrickStool = (BlockStool) Block.blocksList[MoreDeco.blocks.STONEBRICK_STOOL_ID];
+		for (int i = 0; i < stonebrickStool.getSubTypesCount(); i++)
+			GameRegistry.addRecipe(new ItemStack(stonebrickStool, 3, i), new Object[]{
+				"###", "I I",
+		        '#', new ItemStack(Block.stoneBrick, 1, i),
+		        'I', Item.stick
+			});
 		BlockChair stonebrickChair = (BlockChair) Block.blocksList[MoreDeco.blocks.STONEBRICK_CHAIR_ID];
 		for (int i = 0; i < stonebrickChair.getSubTypesCount(); i++)
 			GameRegistry.addRecipe(new ItemStack(stonebrickChair, 4, 4 * i), new Object[]{
@@ -92,6 +129,11 @@ public final class MoreDecoRecipes {
 		
 		GameRegistry.addRecipe(new ItemStack(Block.blocksList[MoreDeco.blocks.COAL_TABLE_ID], 3), new Object[]{
 			"###", "I I", "I I",
+			'#', Item.coal,
+			'I', Item.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(Block.blocksList[MoreDeco.blocks.COAL_STOOL_ID], 3), new Object[]{
+			"###", "I I",
 			'#', Item.coal,
 			'I', Item.stick
 		});
@@ -106,6 +148,11 @@ public final class MoreDecoRecipes {
 			'#', Item.ingotIron,
 			'I', Item.stick
 		});
+		GameRegistry.addRecipe(new ItemStack(Block.blocksList[MoreDeco.blocks.IRON_STOOL_ID], 3), new Object[]{
+			"###", "I I",
+			'#', Item.ingotIron,
+			'I', Item.stick
+		});
 		GameRegistry.addRecipe(new ItemStack(Block.blocksList[MoreDeco.blocks.IRON_CHAIR_ID], 4), new Object[]{
 			"#  ", "###", "I I",
 			'#', Item.ingotIron,
@@ -114,6 +161,11 @@ public final class MoreDecoRecipes {
 		
 		GameRegistry.addRecipe(new ItemStack(Block.blocksList[MoreDeco.blocks.GOLD_TABLE_ID], 3), new Object[]{
 			"###", "I I", "I I",
+			'#', Item.ingotGold,
+			'I', Item.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(Block.blocksList[MoreDeco.blocks.GOLD_STOOL_ID], 3), new Object[]{
+			"###", "I I",
 			'#', Item.ingotGold,
 			'I', Item.stick
 		});
@@ -128,6 +180,11 @@ public final class MoreDecoRecipes {
 			'#', new ItemStack(Item.dyePowder, 1, 4),
 			'I', Item.stick
 		});
+		GameRegistry.addRecipe(new ItemStack(Block.blocksList[MoreDeco.blocks.LAPIS_STOOL_ID], 3), new Object[]{
+			"###", "I I",
+			'#', new ItemStack(Item.dyePowder, 1, 4),
+			'I', Item.stick
+		});
 		GameRegistry.addRecipe(new ItemStack(Block.blocksList[MoreDeco.blocks.LAPIS_CHAIR_ID], 4), new Object[]{
 			"#  ", "###", "I I",
 			'#', new ItemStack(Item.dyePowder, 1, 4),
@@ -136,6 +193,11 @@ public final class MoreDecoRecipes {
 		
 		GameRegistry.addRecipe(new ItemStack(Block.blocksList[MoreDeco.blocks.REDSTONE_TABLE_ID], 3), new Object[]{
 			"###", "I I", "I I",
+			'#', Item.redstone,
+			'I', Item.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(Block.blocksList[MoreDeco.blocks.REDSTONE_STOOL_ID], 3), new Object[]{
+			"###", "I I",
 			'#', Item.redstone,
 			'I', Item.stick
 		});
@@ -150,6 +212,11 @@ public final class MoreDecoRecipes {
 			'#', Item.diamond,
 			'I', Item.stick
 		});
+		GameRegistry.addRecipe(new ItemStack(Block.blocksList[MoreDeco.blocks.DIAMOND_STOOL_ID], 3), new Object[]{
+			"###", "I I",
+			'#', Item.diamond,
+			'I', Item.stick
+		});
 		GameRegistry.addRecipe(new ItemStack(Block.blocksList[MoreDeco.blocks.DIAMOND_CHAIR_ID], 4), new Object[]{
 			"#  ", "###", "I I",
 			'#', Item.diamond,
@@ -158,6 +225,11 @@ public final class MoreDecoRecipes {
 		
 		GameRegistry.addRecipe(new ItemStack(Block.blocksList[MoreDeco.blocks.EMERALD_TABLE_ID], 3), new Object[]{
 			"###", "I I", "I I",
+			'#', Item.emerald,
+			'I', Item.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(Block.blocksList[MoreDeco.blocks.EMERALD_STOOL_ID], 3), new Object[]{
+			"###", "I I",
 			'#', Item.emerald,
 			'I', Item.stick
 		});
@@ -172,6 +244,11 @@ public final class MoreDecoRecipes {
 		    '#', Block.sandStone,
 		    'I', Item.stick
 		});
+		GameRegistry.addRecipe(new ItemStack(Block.blocksList[MoreDeco.blocks.SANDSTONE_STOOL_ID], 3), new Object[]{
+			"###", "I I",
+		    '#', Block.sandStone,
+		    'I', Item.stick
+		});
 		GameRegistry.addRecipe(new ItemStack(Block.blocksList[MoreDeco.blocks.SANDSTONE_CHAIR_ID], 4), new Object[]{
 			"#  ", "###", "I I",
 			'#', Block.sandStone,
@@ -182,6 +259,13 @@ public final class MoreDecoRecipes {
 		for (int i = 0; i < quartzTable.getSubTypesCount(); i++)
 			GameRegistry.addRecipe(new ItemStack(quartzTable, 3, i), new Object[]{
 				"###", "I I", "I I",
+		        '#', new ItemStack(Block.blockNetherQuartz, 1, i),
+		        'I', Item.stick
+			});
+		BlockStool quartzStool = (BlockStool) Block.blocksList[MoreDeco.blocks.QUARTZ_STOOL_ID];
+		for (int i = 0; i < quartzStool.getSubTypesCount(); i++)
+			GameRegistry.addRecipe(new ItemStack(quartzStool, 3, i), new Object[]{
+				"###", "I I",
 		        '#', new ItemStack(Block.blockNetherQuartz, 1, i),
 		        'I', Item.stick
 			});
@@ -204,6 +288,17 @@ public final class MoreDecoRecipes {
 			GameRegistry.addShapelessRecipe(new ItemStack(woolTable, 1, i), new ItemStack(Item.itemsList[woolTable.blockID]),
 					new ItemStack(Item.dyePowder, 1, BlockColored.getDyeFromBlock(i)));
 		}
+		BlockStool woolStool = (BlockStool) Block.blocksList[MoreDeco.blocks.WOOL_STOOL_ID];
+		for (int i = 0; i < woolStool.getSubTypesCount(); i++)
+		{
+			GameRegistry.addRecipe(new ItemStack(woolStool, 3, i), new Object[]{
+				"###", "I I",
+		        '#', new ItemStack(Block.cloth, 1, i),
+		        'I', Item.stick
+			});
+			GameRegistry.addShapelessRecipe(new ItemStack(woolStool, 1, i), new ItemStack(Item.itemsList[woolStool.blockID]),
+					new ItemStack(Item.dyePowder, 1, BlockColored.getDyeFromBlock(i)));
+		}
 		for (int i = 0; i < 4; i++)
 		{
 			BlockChair woolChair = (BlockChair) Block.blocksList[MoreDeco.blocks.WOOL_0_CHAIR_ID + i];
@@ -221,6 +316,11 @@ public final class MoreDecoRecipes {
 		
 		GameRegistry.addRecipe(new ItemStack(Block.blocksList[MoreDeco.blocks.HARDENED_CLAY_TABLE_ID], 3), new Object[]{
 			"###", "I I", "I I",
+			'#', Block.hardenedClay,
+			'I', Item.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(Block.blocksList[MoreDeco.blocks.HARDENED_CLAY_STOOL_ID], 3), new Object[]{
+			"###", "I I",
 			'#', Block.hardenedClay,
 			'I', Item.stick
 		});
@@ -243,6 +343,19 @@ public final class MoreDecoRecipes {
 			GameRegistry.addShapelessRecipe(new ItemStack(stainedClayTable, 1, i), new ItemStack(Item.itemsList[hardenedClayTable.blockID]),
 					new ItemStack(Item.dyePowder, 1, BlockColored.getDyeFromBlock(i)));			
 		}
+		BlockStool hardenedClayStool = (BlockStool) Block.blocksList[MoreDeco.blocks.HARDENED_CLAY_STOOL_ID];
+		BlockStool stainedClayStool = (BlockStool) Block.blocksList[MoreDeco.blocks.STAINED_CLAY_STOOL_ID];
+		for (int i = 0; i < stainedClayStool.getSubTypesCount(); i++)
+		{
+			GameRegistry.addRecipe(new ItemStack(stainedClayStool, 3, i), new Object[]{
+				"###", "I I",
+		        '#', new ItemStack(Block.stainedClay, 1, i),
+		        'I', Item.stick
+			});
+			
+			GameRegistry.addShapelessRecipe(new ItemStack(stainedClayStool, 1, i), new ItemStack(Item.itemsList[hardenedClayStool.blockID]),
+					new ItemStack(Item.dyePowder, 1, BlockColored.getDyeFromBlock(i)));			
+		}
 		for (int i = 0; i < 4; i++)
 		{
 			BlockChair stainedClayChair = (BlockChair) Block.blocksList[MoreDeco.blocks.STAINED_CLAY_0_CHAIR_ID + i];
@@ -263,6 +376,11 @@ public final class MoreDecoRecipes {
 			'#', Block.netherrack,
 			'I', Item.stick
 		});
+		GameRegistry.addRecipe(new ItemStack(Block.blocksList[MoreDeco.blocks.NETHERRACK_STOOL_ID], 3), new Object[]{
+			"###", "I I",
+			'#', Block.netherrack,
+			'I', Item.stick
+		});
 		GameRegistry.addRecipe(new ItemStack(Block.blocksList[MoreDeco.blocks.NETHERRACK_CHAIR_ID], 4), new Object[]{
 			"#  ", "###", "I I",
 			'#', Block.netherrack,
@@ -271,6 +389,11 @@ public final class MoreDecoRecipes {
 		
 		GameRegistry.addRecipe(new ItemStack(Block.blocksList[MoreDeco.blocks.SOULSAND_TABLE_ID], 3), new Object[]{
 			"###", "I I", "I I",
+			'#', Block.slowSand,
+			'I', Item.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(Block.blocksList[MoreDeco.blocks.SOULSAND_STOOL_ID], 3), new Object[]{
+			"###", "I I",
 			'#', Block.slowSand,
 			'I', Item.stick
 		});
@@ -285,6 +408,11 @@ public final class MoreDecoRecipes {
 			'#', Block.glowStone,
 			'I', Item.stick
 		});
+		GameRegistry.addRecipe(new ItemStack(Block.blocksList[MoreDeco.blocks.GLOWSTONE_STOOL_ID], 3), new Object[]{
+			"###", "I I",
+			'#', Block.glowStone,
+			'I', Item.stick
+		});
 		GameRegistry.addRecipe(new ItemStack(Block.blocksList[MoreDeco.blocks.GLOWSTONE_CHAIR_ID], 4), new Object[]{
 			"#  ", "###", "I I",
 			'#', Block.glowStone,
@@ -293,6 +421,11 @@ public final class MoreDecoRecipes {
 		
 		GameRegistry.addRecipe(new ItemStack(Block.blocksList[MoreDeco.blocks.NETHER_BRICK_TABLE_ID], 3), new Object[]{
 			"###", "I I", "I I",
+			'#', Block.netherBrick,
+			'I', Item.stick
+		});
+		GameRegistry.addRecipe(new ItemStack(Block.blocksList[MoreDeco.blocks.NETHER_BRICK_STOOL_ID], 3), new Object[]{
+			"###", "I I",
 			'#', Block.netherBrick,
 			'I', Item.stick
 		});
