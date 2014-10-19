@@ -2,20 +2,20 @@ package fr.mathdu07.moredeco.block;
 
 import java.util.List;
 
-import fr.mathdu07.moredeco.MoreDeco;
+import fr.mathdu07.moredeco.MoreDecoUtil;
 import net.minecraft.block.Block;
-import net.minecraft.client.renderer.texture.IconRegister;
+import net.minecraft.block.MoreDecoBlockUtil;
+import net.minecraft.client.renderer.texture.IIconRegister;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EnumCreatureType;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.item.ItemStack;
-import net.minecraft.util.AxisAlignedBB;
-import net.minecraft.util.Icon;
+import net.minecraft.item.Item;
+import net.minecraft.util.IIcon;
 import net.minecraft.world.Explosion;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
-import net.minecraftforge.common.ForgeDirection;
+import net.minecraftforge.common.util.ForgeDirection;
 
 public class BlockChildren extends Block {
 	
@@ -24,16 +24,15 @@ public class BlockChildren extends Block {
 	/**
 	 * A block that inherits properties from his parent blocks
 	 * 
-	 * @param id
 	 * @param parentBlock
 	 */
-	public BlockChildren(int id, Block parentBlock)
+	public BlockChildren(Block parentBlock)
 	{
-		super(id, parentBlock.blockMaterial);
+		super(parentBlock.getMaterial());
 		this.parentBlock = parentBlock;
 		
-		this.setHardness(parentBlock.blockHardness);
-		this.setResistance(parentBlock.blockResistance);
+		this.setHardness(MoreDecoBlockUtil.getHardness(parentBlock));
+		this.setResistance(MoreDecoBlockUtil.getResistance(parentBlock));
 		this.setStepSound(parentBlock.stepSound);
 	}
 	
@@ -43,14 +42,13 @@ public class BlockChildren extends Block {
 	}
 
 	@Override
-	public Icon getIcon(int side, int data) {
+	public IIcon getIcon(int side, int data) {
 		return parentBlock.getIcon(side, data);
 	}
 
 	@Override
-	public Icon getBlockTexture(IBlockAccess par1iBlockAccess, int par2,
-			int par3, int par4, int par5) {
-		return parentBlock.getBlockTexture(par1iBlockAccess, par2, par3, par4, par5);
+	public IIcon getIcon(IBlockAccess world, int x, int y, int z, int side) {
+		return parentBlock.getIcon(world, x, y, z, side);
 	}
 
 	@Override
@@ -64,8 +62,8 @@ public class BlockChildren extends Block {
 	}
 
 	@Override
-	public void getSubBlocks(int id, CreativeTabs tab, List list) {
-		parentBlock.getSubBlocks(id, tab, list);
+	public void getSubBlocks(Item item, CreativeTabs tab, List list) {
+		parentBlock.getSubBlocks(item, tab, list);
 	}
 
 	@Override
@@ -74,7 +72,7 @@ public class BlockChildren extends Block {
 	}
 
 	@Override
-	public void registerIcons(IconRegister par1IconRegister) {
+	public void registerBlockIcons(IIconRegister par1IconRegister) {
 		
 	}
 
@@ -84,13 +82,13 @@ public class BlockChildren extends Block {
 	}
 
 	@Override
-	public int getFlammability(IBlockAccess world, int x, int y, int z, int metadata, ForgeDirection face) {
-		return parentBlock.getFlammability(world, x, y, z, metadata, face);
+	public int getFlammability(IBlockAccess world, int x, int y, int z, ForgeDirection face) {
+		return parentBlock.getFlammability(world, x, y, z, face);
 	}
 
 	@Override
-	public int getFireSpreadSpeed(World world, int x, int y, int z, int metadata, ForgeDirection face) {
-		return parentBlock.getFireSpreadSpeed(world, x, y, z, metadata, face);
+	public int getFireSpreadSpeed(IBlockAccess world, int x, int y, int z, ForgeDirection face) {
+		return parentBlock.getFireSpreadSpeed(world, x, y, z, face);
 	}
 
 	@Override
@@ -99,7 +97,7 @@ public class BlockChildren extends Block {
 	}
 
 	@Override
-	public boolean canCreatureSpawn(EnumCreatureType type, World world, int x, int y, int z) {
+	public boolean canCreatureSpawn(EnumCreatureType type, IBlockAccess world, int x, int y, int z) {
 		return parentBlock.canCreatureSpawn(type, world, x, y, z);
 	}
 

@@ -16,11 +16,15 @@ tile.wooden_table.oak.name=Oak wood table
 tile.wooden_table.spruce.name=Spruce wood table
 tile.wooden_table.birch.name=Birch wood table
 tile.wooden_table.jungle.name=Jungle wood table
+tile.wooden_table.acacia.name=Acacia wood table
+tile.wooden_table.big_oak.name=Dark oak wood table
 
 tile.planks_table.oak.name=Oak planks table
 tile.planks_table.spruce.name=Spruce planks table
 tile.planks_table.birch.name=Birch planks table
 tile.planks_table.jungle.name=Jungle planks table
+tile.planks_table.acacia.name=Acacia planks table
+tile.planks_table.big_oak.name=Dark oak planks table
 
 tile.glass_table.name=Glass table
 
@@ -106,11 +110,15 @@ tile.wooden_chair.oak.name=Oak wood chair
 tile.wooden_chair.spruce.name=Spruce wood chair
 tile.wooden_chair.birch.name=Birch wood chair
 tile.wooden_chair.jungle.name=Jungle wood chair
+tile.wooden_chair.acacia.name=Acacia wood chair
+tile.wooden_chair.big_oak.name=Dark oak wood chair
 
 tile.planks_chair.oak.name=Oak planks chair
 tile.planks_chair.spruce.name=Spruce planks chair
 tile.planks_chair.birch.name=Birch planks chair
 tile.planks_chair.jungle.name=Jungle planks chair
+tile.planks_chair.acacia.name=Acacia planks chair
+tile.planks_chair.big_oak.name=Dark oak planks chair
 
 tile.glass_chair.name=Glass chair
 
@@ -196,11 +204,15 @@ tile.wooden_stool.oak.name=Oak wood stool
 tile.wooden_stool.spruce.name=Spruce wood stool
 tile.wooden_stool.birch.name=Birch wood stool
 tile.wooden_stool.jungle.name=Jungle wood stool
+tile.wooden_stool.acacia.name=Acacia wood stool
+tile.wooden_stool.big_oak.name=Dark oak wood stool
 
 tile.planks_stool.oak.name=Oak planks stool
 tile.planks_stool.spruce.name=Spruce planks stool
 tile.planks_stool.birch.name=Birch planks stool
 tile.planks_stool.jungle.name=Jungle planks stool
+tile.planks_stool.acacia.name=Acacia planks stool
+tile.planks_stool.big_oak.name=Dark oak planks stool
 
 tile.glass_stool.name=Glass stool
 

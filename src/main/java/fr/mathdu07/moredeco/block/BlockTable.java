@@ -3,19 +3,18 @@ package fr.mathdu07.moredeco.block;
 import java.util.List;
 
 import net.minecraft.block.Block;
-import net.minecraft.client.renderer.texture.IconRegister;
+import net.minecraft.block.MoreDecoBlockUtil;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EnumCreatureType;
-import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.AxisAlignedBB;
-import net.minecraft.util.Icon;
-import net.minecraft.world.Explosion;
+import net.minecraft.util.IIcon;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
-import net.minecraftforge.common.ForgeDirection;
 import fr.mathdu07.moredeco.MoreDeco;
+import fr.mathdu07.moredeco.MoreDecoUtil;
 
 public class BlockTable extends BlockChildren implements IMultipleBlock {
 	
@@ -31,10 +30,10 @@ public class BlockTable extends BlockChildren implements IMultipleBlock {
 	 * @param suffix - if the parent block uses metadata, add all suffix for the unlocalized names, 
 	 *         to give a name which changes with metadata
 	 */
-	public BlockTable(int id, Block parentBlock, String... suffix)
+	public BlockTable(Block parentBlock, String... suffix)
 	{
-		super(id, parentBlock);
-		this.setResistance(parentBlock.blockResistance / 3.f);
+		super(parentBlock);
+		this.setResistance(MoreDecoBlockUtil.getResistance(parentBlock) / 3.f);
 		this.setLightOpacity(0);
 		this.setCreativeTab(MoreDeco.tabTables);
 		this.suffixes = suffix;
@@ -52,9 +51,9 @@ public class BlockTable extends BlockChildren implements IMultipleBlock {
 	 * @param suffix - if the parent block uses metadata, add all suffix for the unlocalized names, 
 	 *         to give a name which changes with metadata
 	 */
-	public BlockTable(int id, Block parentBlock, Block leg, String... suffix)
+	public BlockTable(Block parentBlock, Block leg, String... suffix)
 	{
-		this(id, parentBlock, leg, -1, suffix);
+		this(parentBlock, leg, -1, suffix);
 	}
 	
 	/**
@@ -67,9 +66,9 @@ public class BlockTable extends BlockChildren implements IMultipleBlock {
 	 * @param suffix - if the parent block uses metadata, add all suffix for the unlocalized names, 
 	 *         to give a name which changes with metadata
 	 */
-	public BlockTable(int id, Block parentBlock, Block leg, int legMetadata, String... suffix)
+	public BlockTable(Block parentBlock, Block leg, int legMetadata, String... suffix)
 	{
-		this(id, parentBlock, suffix);
+		this(parentBlock, suffix);
 		
 		this.legBlock = leg;
 		this.legMetadata = legMetadata;
@@ -109,7 +108,7 @@ public class BlockTable extends BlockChildren implements IMultipleBlock {
 		
 	}
 
-	public Icon getLegIcon(int face, int metadata)
+	public IIcon getLegIcon(int face, int metadata)
 	{
 		if (legBlock != null)
 			return legBlock.getIcon(face, legMetadata == -1 ? metadata : legMetadata);
@@ -138,7 +137,7 @@ public class BlockTable extends BlockChildren implements IMultipleBlock {
 
 	public static boolean isBlockTable(IBlockAccess world, int x, int y, int z)
 	{
-		return Block.blocksList[world.getBlockId(x, y, z)] instanceof BlockTable;
+		return world.getBlock(x, y, z) instanceof BlockTable;
 	}
 
 	@Override
@@ -162,18 +161,18 @@ public class BlockTable extends BlockChildren implements IMultipleBlock {
 	}
 
 	@Override
-	public void getSubBlocks(int id, CreativeTabs tab, List list) {
+	public void getSubBlocks(Item item, CreativeTabs tab, List list) {
 		if (suffixes.length > 0)
 		{
 			for (int i = 0; i < suffixes.length; i++)
-				list.add(new ItemStack(id, 1, i));
+				list.add(new ItemStack(item, 1, i));
 		}
 		else
-			list.add(new ItemStack(id, 1, 0));
+			list.add(new ItemStack(item, 1, 0));
 	}
 
 	@Override
-	public boolean canCreatureSpawn(EnumCreatureType type, World world, int x, int y, int z) {
+	public boolean canCreatureSpawn(EnumCreatureType type, IBlockAccess world, int x, int y, int z) {
 		return false;
 	}
 

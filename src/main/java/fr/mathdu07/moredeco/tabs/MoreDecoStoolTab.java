@@ -2,6 +2,7 @@ package fr.mathdu07.moredeco.tabs;
 
 import fr.mathdu07.moredeco.MoreDeco;
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 
 public class MoreDecoStoolTab extends CreativeTabs {
@@ -10,11 +11,11 @@ public class MoreDecoStoolTab extends CreativeTabs {
 	{
 		super("moredeco_stool");
 	}
-
+	
 	@Override
-	public ItemStack getIconItemStack()
+	public Item getTabIconItem() 
 	{
-		return new ItemStack(MoreDeco.blocks.PLANKS_STOOL_ID, 1, 0);
+		return Item.getItemFromBlock(MoreDeco.blocks.WOODEN_0_STOOL);
 	}
 	
 	

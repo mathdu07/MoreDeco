@@ -1,6 +1,7 @@
 package fr.mathdu07.moredeco;
 
 import net.minecraft.creativetab.CreativeTabs;
+
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.Mod.Instance;
@@ -8,21 +9,20 @@ import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
-import cpw.mods.fml.common.network.NetworkMod;
 import cpw.mods.fml.common.registry.EntityRegistry;
 import fr.mathdu07.moredeco.entity.EntityMountableBlock;
+
 import fr.mathdu07.moredeco.proxy.CommonProxy;
 import fr.mathdu07.moredeco.tabs.MoreDecoChairTab;
 import fr.mathdu07.moredeco.tabs.MoreDecoStoolTab;
 import fr.mathdu07.moredeco.tabs.MoreDecoTableTab;
 
-@Mod(modid = MoreDeco.MODID, version = MoreDeco.VERSION, useMetadata = true, acceptedMinecraftVersions = "[1.6.2,1.6.4]")
-@NetworkMod(clientSideRequired = true, serverSideRequired = false)
+@Mod(modid = MoreDeco.MODID, version = MoreDeco.VERSION, useMetadata = true, acceptedMinecraftVersions = "[1.7.2,1.7.10]")
 public class MoreDeco
 {
     public static final String MODID = "moredeco";
     public static final String NAME = "More Deco";
-    public static final String VERSION = "0.2";
+    public static final String VERSION = "0.2.1-SNAPSHOT";
     
     @Instance(MoreDeco.MODID)
     private static MoreDeco instance;

@@ -16,11 +16,15 @@ tile.wooden_table.oak.name=Table en bois de chêne
 tile.wooden_table.spruce.name=Table en bois de sapin
 tile.wooden_table.birch.name=Table en bois de bouleau
 tile.wooden_table.jungle.name=Table en bois d'acajou
+tile.wooden_table.acacia.name=Table en bois d'acacia
+tile.wooden_table.big_oak.name=Table en bois de chêne noir
 
 tile.planks_table.oak.name=Table en planches de chêne
 tile.planks_table.spruce.name=Table en planches de sapin
 tile.planks_table.birch.name=Table en planches de bouleau
 tile.planks_table.jungle.name=Table en planches d'acajou
+tile.planks_table.acacia.name=Table en planches d'acacia
+tile.planks_table.big_oak.name=Table en planches de chêne noir
 
 tile.glass_table.name=Table en verre
 
@@ -106,11 +110,15 @@ tile.wooden_chair.oak.name=Chaise en bois de chêne
 tile.wooden_chair.spruce.name=Chaise en bois de sapin
 tile.wooden_chair.birch.name=Chaise en bois de bouleau
 tile.wooden_chair.jungle.name=Chaise en bois d'acajou
+tile.wooden_chair.acacia.name=Chaise en bois d'acacia
+tile.wooden_chair.big_oak.name=Chaise en bois de chêne noir
 
 tile.planks_chair.oak.name=Chaise en planches de chêne
 tile.planks_chair.spruce.name=Chaise en planches de sapin
 tile.planks_chair.birch.name=Chaise en planches de bouleau
 tile.planks_chair.jungle.name=Chaise en planches d'acajou
+tile.planks_chair.acacia.name=Chaise en planches d'acacia
+tile.planks_chair.big_oak.name=Chaise en planches de chêne noir
 
 tile.glass_chair.name=Chaise en verre
 
@@ -196,11 +204,15 @@ tile.wooden_stool.oak.name=Tabouret en bois de chêne
 tile.wooden_stool.spruce.name=Tabouret en bois de sapin
 tile.wooden_stool.birch.name=Tabouret en bois de bouleau
 tile.wooden_stool.jungle.name=Tabouret en bois d'acajou
+tile.wooden_stool.acacia.name=Tabouret en bois d'acacia
+tile.wooden_stool.big_oak.name=Tabouret en bois de chêne noir
 
 tile.planks_stool.oak.name=Tabouret en planches de chêne
 tile.planks_stool.spruce.name=Tabouret en planches de sapin
 tile.planks_stool.birch.name=Tabouret en planches de bouleau
 tile.planks_stool.jungle.name=Tabouret en planches d'acajou
+tile.planks_stool.acacia.name=Tabouret en planches d'acacia
+tile.planks_stool.big_oak.name=Tabouret en planches de chêne noir
 
 tile.glass_stool.name=Tabouret en verre
 

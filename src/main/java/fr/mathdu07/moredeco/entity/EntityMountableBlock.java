@@ -1,9 +1,9 @@
 package fr.mathdu07.moredeco.entity;
 
+import net.minecraft.block.Block;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLiving;
 import net.minecraft.entity.item.EntityEnderEye;
-import net.minecraft.entity.item.EntityFallingSand;
 import net.minecraft.entity.item.EntityXPOrb;
 import net.minecraft.entity.passive.EntityAnimal;
 import net.minecraft.entity.passive.EntityPig;
@@ -17,7 +17,7 @@ import net.minecraft.world.World;
 public class EntityMountableBlock extends Entity
 {
 	public int blockX, blockY, blockZ;
-	public int blockId;
+	public Block block;
 	private EntityPlayer player;
 	
 	public EntityMountableBlock(World world)
@@ -35,7 +35,7 @@ public class EntityMountableBlock extends Entity
 		this.blockY = y;
 		this.blockZ = z;
 		this.player = player;
-		this.blockId = world.getBlockId(x, y, z);
+		this.block = world.getBlock(x, y, z);
 		
 		this.noClip = true;
 		this.preventEntitySpawning = true;
@@ -66,7 +66,7 @@ public class EntityMountableBlock extends Entity
 	{
 		super.onUpdate();
 		
-		if (riddenByEntity == null || riddenByEntity.isDead	|| worldObj.getBlockId(blockX, blockY, blockZ) != blockId)
+		if (riddenByEntity == null || riddenByEntity.isDead	|| worldObj.getBlock(blockX, blockY, blockZ) != block)
 		{
 			if (player != null)
 				player.mountEntity(null);

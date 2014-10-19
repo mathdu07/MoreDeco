@@ -3,6 +3,7 @@ package fr.mathdu07.moredeco.tabs;
 import fr.mathdu07.moredeco.MoreDeco;
 import net.minecraft.block.Block;
 import net.minecraft.creativetab.CreativeTabs;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 
 public class MoreDecoChairTab extends CreativeTabs {
@@ -11,13 +12,10 @@ public class MoreDecoChairTab extends CreativeTabs {
 	{
 		super("moredeco_chair");
 	}
-
 	@Override
-	public ItemStack getIconItemStack()
+	public Item getTabIconItem() 
 	{
-		return new ItemStack(Block.blocksList[MoreDeco.blocks.PLANKS_CHAIR_ID]);
-	}
-	
-	
+		return Item.getItemFromBlock(MoreDeco.blocks.WOODEN_0_CHAIR);
+	}	
 
 }

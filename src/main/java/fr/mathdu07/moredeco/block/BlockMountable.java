@@ -12,8 +12,8 @@ import fr.mathdu07.moredeco.entity.EntityMountableBlock;
 public abstract class BlockMountable extends BlockChildren
 {
 
-	public BlockMountable(int id, Block parentBlock) {
-		super(id, parentBlock);
+	public BlockMountable(Block parentBlock) {
+		super(parentBlock);
 	}
 	
 	@Override

@@ -1,5 +1,9 @@
 package fr.mathdu07.moredeco;
 
+import java.lang.reflect.Field;
+
+import net.minecraft.block.Block;
+
 public class MoreDecoUtil {
 	
 	/**
@@ -36,7 +40,7 @@ public class MoreDecoUtil {
 		if (end < 0 || end > array.length)
 			throw new IllegalArgumentException("end must be between 0 and array's length (inclusive)");
 		if (cut.length != (end - begin))
-			throw new IllegalArgumentException("cut is too small to receive the sequence");
+			throw new IllegalArgumentException("cut's length is different from sequence's one");
 		
 		for (int i = 0; i < (end - begin); i++)
 			cut[i] = array[i + begin];

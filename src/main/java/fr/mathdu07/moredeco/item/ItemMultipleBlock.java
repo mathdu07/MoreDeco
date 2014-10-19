@@ -9,8 +9,8 @@ public class ItemMultipleBlock extends ItemBlockWithMetadata {
 	
 	private final IMultipleBlock multipleBlock;
 	
-	public ItemMultipleBlock(int id, Block block) {
-		super(id, block);
+	public ItemMultipleBlock(Block block) {
+		super(block, block);
 		
 		if (!(block instanceof IMultipleBlock))
 			throw new IllegalArgumentException("The block " + block + " does not implement IMultipleBlock interface");

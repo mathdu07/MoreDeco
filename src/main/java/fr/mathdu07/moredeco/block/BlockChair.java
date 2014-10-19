@@ -3,14 +3,17 @@ package fr.mathdu07.moredeco.block;
 import java.util.List;
 
 import fr.mathdu07.moredeco.MoreDeco;
+import fr.mathdu07.moredeco.MoreDecoUtil;
 import net.minecraft.block.Block;
+import net.minecraft.block.MoreDecoBlockUtil;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
+import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.AxisAlignedBB;
-import net.minecraft.util.Icon;
+import net.minecraft.util.IIcon;
 import net.minecraft.util.MathHelper;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
@@ -33,9 +36,9 @@ public class BlockChair extends BlockMountable implements IMultipleBlock
 	 * @param suffix - if the parent block uses metadata, add all suffix for the unlocalized names, 
 	 *         to give a name which changes with metadata
 	 */
-	public BlockChair(int id, Block parentBlock, String... suffix) {
-		super(id, parentBlock);
-		this.setResistance(parentBlock.blockResistance / 3.f);
+	public BlockChair(Block parentBlock, String... suffix) {
+		super(parentBlock);
+		this.setResistance(MoreDecoBlockUtil.getResistance(parentBlock) / 3.f);
 		this.setLightOpacity(0);
 		this.setCreativeTab(MoreDeco.tabChairs);
 		this.suffixes = suffix;
@@ -54,9 +57,9 @@ public class BlockChair extends BlockMountable implements IMultipleBlock
 	 * @param suffix - if the parent block uses metadata, add all suffix for the unlocalized names, 
 	 *         to give a name which changes with metadata
 	 */
-	public BlockChair(int id, Block parentBlock, Block leg, String... suffix)
+	public BlockChair(Block parentBlock, Block leg, String... suffix)
 	{
-		this(id, parentBlock, leg, -1, suffix);
+		this(parentBlock, leg, -1, suffix);
 	}
 	
 	/**
@@ -69,9 +72,9 @@ public class BlockChair extends BlockMountable implements IMultipleBlock
 	 * @param suffix - if the parent block uses metadata, add all suffix for the unlocalized names, 
 	 *         to give a name which changes with metadata
 	 */
-	public BlockChair(int id, Block parentBlock, Block leg, int legMetadata, String... suffix)
+	public BlockChair(Block parentBlock, Block leg, int legMetadata, String... suffix)
 	{
-		this(id, parentBlock, leg, legMetadata, 0, suffix);
+		this(parentBlock, leg, legMetadata, 0, suffix);
 	}
 	
 	/**
@@ -85,9 +88,9 @@ public class BlockChair extends BlockMountable implements IMultipleBlock
 	 * @param suffix - if the parent block uses metadata, add all suffix for the unlocalized names, 
 	 *         to give a name which changes with metadata
 	 */
-	public BlockChair(int id, Block parentBlock, Block leg, int legMetadata, int firstMetadata, String... suffix)
+	public BlockChair(Block parentBlock, Block leg, int legMetadata, int firstMetadata, String... suffix)
 	{
-		this(id, parentBlock, suffix);
+		this(parentBlock, suffix);
 		
 		this.legBlock = leg;
 		this.legMetadata = legMetadata;
@@ -143,15 +146,15 @@ public class BlockChair extends BlockMountable implements IMultipleBlock
 	}
 
 	@Override
-	public void getSubBlocks(int id, CreativeTabs tab, List list)
+	public void getSubBlocks(Item item, CreativeTabs tab, List list)
 	{
 		if (suffixes.length != 0)
 		{
 			for (int i = 0; i < suffixes.length; i++)
-				list.add(new ItemStack(id, 1, i * 4));
+				list.add(new ItemStack(item, 1, i * 4));
 		}
 		else
-			list.add(new ItemStack(Block.blocksList[id]));
+			list.add(new ItemStack(Block.getBlockFromItem(item)));
 	}
 
 	@Override
@@ -173,18 +176,18 @@ public class BlockChair extends BlockMountable implements IMultipleBlock
 	}
 	
 	@Override
-	public Icon getIcon(int side, int data)
+	public IIcon getIcon(int side, int data)
 	{
 		return super.getIcon(side, data / 4 + firstMetadata);
 	}
 
 	@Override
-	public Icon getBlockTexture(IBlockAccess world, int x, int y, int z, int side)
+	public IIcon getIcon(IBlockAccess world, int x, int y, int z, int side)
 	{
 		return getIcon(side, world.getBlockMetadata(x, y, z));
 	}
 
-	public Icon getLegIcon(int face, int metadata)
+	public IIcon getLegIcon(int face, int metadata)
 	{
 		if (legBlock != null)
 			return legBlock.getIcon(face, legMetadata == -1 ? metadata / 4 : legMetadata);
@@ -249,7 +252,7 @@ public class BlockChair extends BlockMountable implements IMultipleBlock
 
 	public static boolean isBlockChair(IBlockAccess world, int x, int y, int z)
 	{
-		return isBlockChair(blocksList[world.getBlockId(x, y, z)]);
+		return isBlockChair(world.getBlock(x, y, z));
 	}
 	
 	public static boolean isBlockChair(Block block)

@@ -129,7 +129,7 @@ public class BlockChairRenderer implements ISimpleBlockRenderingHandler
 	}
 
 	@Override
-	public boolean shouldRender3DInInventory()
+	public boolean shouldRender3DInInventory(int modelId)
 	{
 		return true;
 	}
@@ -139,5 +139,4 @@ public class BlockChairRenderer implements ISimpleBlockRenderingHandler
 	{
 		return MoreDeco.proxy.chairRendererId;
 	}
-
 }

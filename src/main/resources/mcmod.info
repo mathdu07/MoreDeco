@@ -4,7 +4,7 @@
   "name": "More Deco",
   "description": "EN: Adds more decoration blocks into minecraft, such as tables
   FR: Ajoute plus de décoration dans minecraft : tables ...",
-  "version": "0.2",
+  "version": "0.2.1-SNAPSHOT",
   "mcversion": "${mcversion}",
   "url": "",
   "updateUrl": "",
