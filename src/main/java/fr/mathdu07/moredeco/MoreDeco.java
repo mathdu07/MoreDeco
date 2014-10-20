@@ -1,7 +1,7 @@
 package fr.mathdu07.moredeco;
 
 import net.minecraft.creativetab.CreativeTabs;
-
+import net.minecraft.entity.Entity;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.Mod.Instance;
@@ -11,7 +11,6 @@ import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.registry.EntityRegistry;
 import fr.mathdu07.moredeco.entity.EntityMountableBlock;
-
 import fr.mathdu07.moredeco.proxy.CommonProxy;
 import fr.mathdu07.moredeco.tabs.MoreDecoChairTab;
 import fr.mathdu07.moredeco.tabs.MoreDecoStoolTab;
@@ -41,13 +40,14 @@ public class MoreDeco
     	
     	blocks.init();
     	
-    	EntityRegistry.registerModEntity(EntityMountableBlock.class, "entity_mountable_block", 1, this, 5, 3, false);
+    	EntityRegistry.registerModEntity(EntityMountableBlock.class, "entity_mountable_block", 0, this, 5, 3, false);
     }
     
     @EventHandler
     public void init(FMLInitializationEvent event)
     {
         System.out.println("Initializing " + NAME + " version : " + VERSION);
+        
         recipes.init();
     }
  

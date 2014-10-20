@@ -15,7 +15,7 @@ public class MoreDecoTableTab extends CreativeTabs {
 	@Override
 	public Item getTabIconItem() 
 	{
-		return Item.getItemFromBlock(MoreDeco.blocks.WOODEN_0_TABLE);
+		return Item.getItemFromBlock(MoreDeco.blocks.PLANKS_TABLE);
 	}
 
 }

@@ -34,7 +34,7 @@ public class BlockStool extends BlockMountable implements IMultipleBlock
 	public BlockStool(Block parentBlock, String... suffix)
 	{
 		super(parentBlock);
-		this.setResistance(MoreDecoBlockUtil.getResistance(parentBlock));
+		this.setResistance(MoreDecoBlockUtil.getResistance(parentBlock) / 3.f);
 		this.setLightOpacity(0);
 		this.setCreativeTab(MoreDeco.tabStools);
 		this.suffixes = suffix;

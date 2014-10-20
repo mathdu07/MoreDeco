@@ -15,7 +15,7 @@ public class MoreDecoStoolTab extends CreativeTabs {
 	@Override
 	public Item getTabIconItem() 
 	{
-		return Item.getItemFromBlock(MoreDeco.blocks.WOODEN_0_STOOL);
+		return Item.getItemFromBlock(MoreDeco.blocks.PLANKS_STOOL);
 	}
 	
 	

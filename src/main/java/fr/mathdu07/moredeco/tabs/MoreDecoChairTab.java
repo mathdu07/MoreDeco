@@ -15,7 +15,7 @@ public class MoreDecoChairTab extends CreativeTabs {
 	@Override
 	public Item getTabIconItem() 
 	{
-		return Item.getItemFromBlock(MoreDeco.blocks.WOODEN_0_CHAIR);
+		return Item.getItemFromBlock(MoreDeco.blocks.PLANKS_0_CHAIR);
 	}	
 
 }
